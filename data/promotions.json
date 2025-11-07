@@ -1,0 +1,26 @@
+[
+  {
+    "id": "354a94de-c6d5-47a0-a89e-38dfb96576cf",
+    "title": "test",
+    "description": "asdf",
+    "validUntil": "2025-09-25",
+    "discount": "-15%",
+    "image": "/promotions/image-1758541062488.png"
+  },
+  {
+    "id": "promo-1",
+    "title": "Pack perçage Bosch Pro",
+    "description": "Malette 40 pièces + perceuse sans-fil 18V avec 2 batteries et chargeur",
+    "validUntil": "2024-08-31",
+    "discount": "-15%",
+    "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "promo-2",
+    "title": "Sélection EPI chantier",
+    "description": "Casques, gants haute protection et masques respiratoires 3M",
+    "validUntil": "2024-07-15",
+    "discount": "Offre pack pro",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
+  }
+]
