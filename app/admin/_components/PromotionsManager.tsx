@@ -55,7 +55,7 @@ export function PromotionsManager({ promotions }: { promotions: Promotion[] }) {
           </button>
         </form>
       </div>
-      <form action={formAction} className="card bg-white" encType="multipart/form-data">
+      <form action={formAction} className="card bg-white">
         <h2 className="text-xl font-semibold text-slate-900">Ajouter une promotion</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           <div className="md:col-span-1">
@@ -93,14 +93,18 @@ export function PromotionsManager({ promotions }: { promotions: Promotion[] }) {
             <label htmlFor="imageFile" className="text-sm font-semibold text-slate-700">
               Image de l’offre (téléversement)
             </label>
+            {/* File uploads are disabled in this environment to avoid server filesystem operations */}
             <input
               id="imageFile"
-              name="imageFile"
               type="file"
               accept="image/*"
-              className="mt-2 w-full cursor-pointer rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600 file:mr-4 file:rounded-full file:border-0 file:bg-slate-100 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-slate-700 hover:border-primary"
+              disabled
+              aria-disabled="true"
+              className="mt-2 w-full cursor-not-allowed rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-400"
             />
-            <p className="mt-2 text-xs text-slate-400">Formats JPG/PNG/WebP, 2 Mo max. Optionnel si vous fournissez un lien.</p>
+            <p className="mt-2 text-xs text-slate-400">
+              Téléversement désactivé sur ce serveur (évite les erreurs de création de dossier). Fournissez une URL image ci‑dessous.
+            </p>
           </div>
           <div>
             <label htmlFor="imageUrl" className="text-sm font-semibold text-slate-700">
